@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+}
+
+.app-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+}
+
+.app-button {
+    padding: 1rem;
+    background: #4a90e2;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.app-button:hover {
+    background: #357ABD;
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="mb-4">Django Playground</h1>
+
+    <div class="list-group">
+        {% for app in apps %}
+            <a href="{{ app.url }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                {{ app.name }}
+                <i class="bi bi-arrow-right-circle"></i>
+            </a>
+        {% empty %}
+            <p class="text-muted">No apps added yet.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
