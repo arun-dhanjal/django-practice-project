@@ -1,2 +1,7 @@
 .venv/
 env.py
+staticfiles/
+
+# Ignore Python bytecode files
+*/__pycache__/
+*.pyc
