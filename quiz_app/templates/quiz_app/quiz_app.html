@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ question_text }}</h1>
+
+<ul>
+    {% for key, text in choices.items %}
+        <li>{{ key }}: {{ text }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Answer: {{ answer }}</h2>
+{% endblock %}

@@ -21,4 +21,5 @@ from home import views as home_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", home_views.homepage, name="home"),
+    path("quiz-app/", include("quiz_app.urls")),
 ]
